@@ -10,12 +10,10 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'bootstrap-sass', '3.3.7'
 # Use sqlite3 as the database for Active Record
-
-# gem 'mysql2'
+# gem 'sqlite3'
 gem "rack", ">= 2.0.6"
 gem "loofah", ">= 2.2.3"
 gem "rubyzip", ">= 1.2.2"
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -59,7 +57,7 @@ group :development do
 end
 
 group :production do
-  # gem 'pg', '< 1.0.0'
+  gem 'pg', '< 1.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
